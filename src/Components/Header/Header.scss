@@ -1,0 +1,80 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  min-width: 320px;
+  height: 10vh;
+  .header__logo {
+    width: 20%;
+    display: flex;
+    align-items: center;
+  }
+  .header__profile {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .header__user {
+      display: flex;
+      align-items: center;
+      .header__user-name {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #3E3F58;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .header__profile-icons {
+      display: flex;
+      align-items: center;
+      color: #3E4056;
+      .header__profile-icon {
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+  .header__add-btn {
+    position: absolute;
+    color: #ffffff;
+    top: 10vh;
+    right: 20px;
+    border: none;
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+    background: linear-gradient(135deg, #FF974F 0%, #E32C75 100%);
+    transition: all 1s linear;
+    &:hover {
+      animation: gradient .4s linear infinite;
+      background-size: 400% 400%;
+      cursor: pointer;
+    }
+    @keyframes gradient {
+      0% {
+        background: linear-gradient(135deg, #FF974F 0%, #E32C75 100%);
+      }
+      20% {
+        background: linear-gradient(195deg, #FF974F 0%, #E32C75 100%);
+      }
+      40% {
+        background: linear-gradient(255deg, #FF974F 0%, #E32C75 100%);
+      }
+      60% {
+        background: linear-gradient(315deg, #FF974F 0%, #E32C75 100%);
+      }
+      80% {
+        background: linear-gradient(15deg, #FF974F 0%, #E32C75 100%);
+      }
+      100% {
+        background: linear-gradient(75deg, #FF974F 0%, #E32C75 100%);
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.ant-dropdown-trigger {
+  width: 4vh;
+  display: flex;
+  justify-content: center;
+  color: #3E4056;
+  &:hover {
+    color: #3E3F58;
+  }
+}

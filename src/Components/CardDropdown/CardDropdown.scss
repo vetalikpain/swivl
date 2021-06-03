@@ -1,0 +1,18 @@
+.card-dropdown {
+  svg {
+    margin-right: 10px;
+  }
+  a {
+    color: #3E3F58 !important;
+    display: flex;
+    align-items: center;
+  }
+}
+.card__dropdown-button {
+  width: 40px;
+  height: 33px;
+  color: #3E4056;
+  &:hover {
+    color: #3E4056;
+  }
+}

@@ -1,0 +1,25 @@
+.followers-block {
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  .followers-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 11vw;
+    .followers-value {
+      font-size: 18px;
+      font-weight: 600;
+      color: #3E3F58;
+    }
+    .followers-title {
+      font-size: 16px;
+      color: #B2B3BB;
+    }
+  }
+}
+@media screen and (max-width: 705px) {
+  .followers-block {
+    justify-content: space-around;
+  }
+}
