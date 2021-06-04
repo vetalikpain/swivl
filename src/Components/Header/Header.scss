@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  min-width: 320px;
+  min-width: 280px;
   height: 10vh;
   .header__logo {
     width: 20%;
@@ -50,31 +50,10 @@
     height: 64px;
     width: 64px;
     background: linear-gradient(135deg, #FF974F 0%, #E32C75 100%);
-    transition: all 1s linear;
-    &:hover {
-      animation: gradient .4s linear infinite;
-      background-size: 400% 400%;
-      cursor: pointer;
-    }
-    @keyframes gradient {
-      0% {
-        background: linear-gradient(135deg, #FF974F 0%, #E32C75 100%);
-      }
-      20% {
-        background: linear-gradient(195deg, #FF974F 0%, #E32C75 100%);
-      }
-      40% {
-        background: linear-gradient(255deg, #FF974F 0%, #E32C75 100%);
-      }
-      60% {
-        background: linear-gradient(315deg, #FF974F 0%, #E32C75 100%);
-      }
-      80% {
-        background: linear-gradient(15deg, #FF974F 0%, #E32C75 100%);
-      }
-      100% {
-        background: linear-gradient(75deg, #FF974F 0%, #E32C75 100%);
-      }
+    transition: all 0.1s linear;
+    cursor: pointer;
+    &:active {
+      background: linear-gradient(75deg, #FF974F 0%, #E32C75 100%);
     }
   }
 }

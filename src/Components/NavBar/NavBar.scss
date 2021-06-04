@@ -1,3 +1,5 @@
+@import "../../media";
+
 .nav-bar {
   display: flex;
   height: 40px;
@@ -25,9 +27,8 @@
     }
   }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: $tablet-width-m){
   .nav-bar {
     height: 6vh;
   }
-
 }

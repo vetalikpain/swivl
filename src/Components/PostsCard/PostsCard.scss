@@ -1,3 +1,5 @@
+@import "../../media";
+
 p {
   margin: 0;
   color: #3E3F58;
@@ -27,7 +29,7 @@ p {
       margin-bottom: 20px;
       background-color: #ffffff;
       border-radius: 8px;
-      box-shadow: 0px 5px 24px -5px rgba(34, 60, 80, 0.12);
+      box-shadow: 0 5px 24px -5px rgba(34, 60, 80, 0.12);
       .post__title {
         font-family: 'Montserrat', sans-serif;
         color: #3E3F58;
@@ -67,7 +69,7 @@ p {
     }
   }
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: $tablet-width-l) {
   .post__switch-block {
     justify-content: center;
   }
@@ -78,7 +80,7 @@ p {
     font-size: 2em;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $tablet-width-m) {
   .profile-card {
     width: 100%;
   }
@@ -86,16 +88,12 @@ p {
     justify-content: center;
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: $tablet-width-s) {
   .post__card .posts__card-block .post__item {
     width: 70vw;
   }
 }
-@media screen and (max-width: 424px) {
-  .post__footer {
-    flex-direction: column;
-  }
-}
+
 
 
 

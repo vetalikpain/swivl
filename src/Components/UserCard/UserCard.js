@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
-import CardAvatar from '../img/user/avatar.png'
-
+import CardAvatar from '../../img/user/avatar.png'
 import CardDropdown from '../CardDropdown/CardDropdown'
-import './UserCard.scss'
 import Followers from "../Followers/Followers";
+import './UserCard.scss'
 
 export default class UserCard extends Component {
     render() {
@@ -30,9 +29,9 @@ export default class UserCard extends Component {
                             Edit Profile
                         </button>
                     </div>
-                    <CardDropdown></CardDropdown>
+                    <CardDropdown/>
                 </div>
-                <Followers></Followers>
+                <Followers/>
                 <div className="profile__about-user">
                     <p>Cryptocurrencies including Ethereum, Ripple, and Litecoin have all plunged between 20 to 30
                         percent each, according to CoinMarketCap. Here is the latest Ripple price news and live updates

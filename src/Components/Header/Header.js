@@ -1,10 +1,11 @@
 import {Component} from "react";
-import HeaderDropdown from "../HeaderDropdown/HeaderDropdown"
-import UserAvatar from "../img/header/profile_picture.png"
-import Notification from '../img/header/notifications.svg'
-import ShareRecap from '../img/header/share_recap.svg';
-import Medium from '../img/header/medium.svg'
 import AddIcon from '@material-ui/icons/Add';
+
+import HeaderDropdown from "../HeaderDropdown/HeaderDropdown"
+import UserAvatar from "../../img/header/profile_picture.png"
+import Notification from '../../img/header/notifications.svg'
+import ShareRecap from '../../img/header/share_recap.svg';
+import Medium from '../../img/header/medium.svg'
 import './Header.scss'
 
 export default class Header extends Component {
@@ -20,8 +21,7 @@ export default class Header extends Component {
                         <div className="header__user">
                             <h4 className={"header__user-name"}>Arthur Wood</h4>
                             <img src={UserAvatar} alt="" className="header__user-avatar"/>
-                            <HeaderDropdown>
-                            </HeaderDropdown>
+                            <HeaderDropdown/>
                         </div>
                         <div className="header__profile-icons">
                             <img src={Notification} alt=""/>
@@ -30,8 +30,7 @@ export default class Header extends Component {
                         </div>
                     </div>
                     <button className="header__add-btn">
-                        <AddIcon>
-                        </AddIcon>
+                        <AddIcon/>
                     </button>
                 </div>
             </div>

@@ -3,42 +3,17 @@ import './PostsCard.scss'
 import {Switch} from 'antd';
 import {CaretRightOutlined, HeartFilled} from '@ant-design/icons'
 
-const posts = [{
-    title: 'New air routes that promise cheap flights in',
-    author: 'Gregory Watkins',
-    avatar: 'https://image.flaticon.com/icons/png/512/147/147144.png',
-    type: true
-}, {
-    title: 'New air routes that promise cheap flights in',
-    author: 'Gregory Watkins',
-    avatar: 'https://image.flaticon.com/icons/png/512/147/147144.png',
-    type: true
 
-}, {
-    title: 'New air routes that promise cheap flights in',
-    author: 'Gregory Watkins',
-    avatar: 'https://image.flaticon.com/icons/png/512/147/147144.png',
-    type: false
-
-}, {
-    title: 'New air routes that promise cheap flights in',
-    author: 'Gregory Watkins',
-    avatar: 'https://image.flaticon.com/icons/png/512/147/147144.png',
-    type: false
-}]
-
-export default function PostsCard() {
+export default function PostsCard({data}) {
     function onChange(checked) {
         console.log(`switch to ${checked}`);
     }
-    const post = posts.map(({title, author, avatar, type}) => {
-        const typeBtn = type
-        const button = <button className='post__share-btn'>Share</button>;
-        const like = <div className='post__likes-btn'>
-            <CaretRightOutlined className='watch-btn'/> <p>22</p>
-            <HeartFilled className='like-btn'/> <p>122</p>
-        </div>
-
+    const button = <button className='post__share-btn'>Share</button>;
+    const like = <div className='post__likes-btn'>
+        <CaretRightOutlined className='watch-btn'/> <p>22</p>
+        <HeartFilled className='like-btn'/> <p>122</p>
+    </div>
+    const post = data.map(({title, author, avatar, buttonType }) => {
         return (
             <div className='post__item'>
                 <h2 className="post__title">
@@ -51,7 +26,7 @@ export default function PostsCard() {
                             {author}
                         </p>
                     </div>
-                    {typeBtn ? button : like}
+                    {buttonType === 'share' ? button : like}
                 </div>
             </div>
         )
