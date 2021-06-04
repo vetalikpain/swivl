@@ -26,13 +26,15 @@ h1, p {
   }
   .profile__edit-btn {
     display: flex;
+    justify-content: space-between;
     border: none;
-    justify-content: center;
-    align-items: center;
     color: #F05D63;
     cursor: pointer;
     background-color: inherit;
     text-decoration: underline;
+    .edit-icon{
+      margin-right: 5px;
+    }
   }
   .profile__about-user{
     font-size: 14px;

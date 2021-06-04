@@ -21,7 +21,7 @@ export default function PostsCard({data}) {
                 </h2>
                 <div className="post__footer">
                     <div className='post__author-wrapper'>
-                        <img src={avatar} alt=""/>
+                        <img src={avatar} alt="Author avatar"/>
                         <p className="post__author">
                             {author}
                         </p>
