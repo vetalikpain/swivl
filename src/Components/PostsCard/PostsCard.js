@@ -13,9 +13,9 @@ export default function PostsCard({data}) {
         <CaretRightOutlined className='watch-btn'/> <p>22</p>
         <HeartFilled className='like-btn'/> <p>122</p>
     </div>
-    const post = data.map(({title, author, avatar, buttonType }) => {
+    const post = data.map(({title, author, avatar, buttonType, id }) => {
         return (
-            <div className='post__item'>
+            <div className='post__item' key={id}>
                 <h2 className="post__title">
                     {title}
                 </h2>

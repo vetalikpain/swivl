@@ -7,24 +7,28 @@ const posts = [{
     title: 'New air routes that promise cheap flights in',
     author: 'Gregory Watkins',
     avatar: 'https://image.flaticon.com/icons/png/512/147/147144.png',
-    buttonType: 'share'
+    buttonType: 'share',
+    id: 1
 }, {
     title: 'New air routes that promise cheap flights in',
     author: 'Gregory Watkins',
     avatar: 'https://image.flaticon.com/icons/png/512/147/147144.png',
-    buttonType: 'share'
+    buttonType: 'share',
+    id: 2
 
 }, {
     title: 'New air routes that promise cheap flights in',
     author: 'Gregory Watkins',
     avatar: 'https://image.flaticon.com/icons/png/512/147/147144.png',
-    buttonType: 'like'
+    buttonType: 'like',
+    id: 3
 
 }, {
     title: 'New air routes that promise cheap flights in',
     author: 'Gregory Watkins',
     avatar: 'https://image.flaticon.com/icons/png/512/147/147144.png',
-    buttonType: 'like'
+    buttonType: 'like',
+    id: 4
 }]
 
 export default class MainSection extends Component {
