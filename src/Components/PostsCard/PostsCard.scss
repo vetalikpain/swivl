@@ -1,71 +1,68 @@
 @import "../../media";
 
-p {
-  margin: 0;
-  color: #3E3F58;
-}
 .post__card {
+
   .post__switch-block {
     display: flex;
     margin-bottom: 5vh;
-    .ant-switch-checked {
-      background-color: #ED5267;
-    }
-    .switcher-value {
-      font-size: 16px;
-      font-weight: 600;
-      font-family: "Open Sans", sans-serif;
-      margin: 0 4vh;
-    }
+  }
+  .ant-switch-checked {
+    background-color: #ED5267;
+  }
+  .switcher-value {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    margin: 0 4vh;
   }
   .posts__card-block {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    .post__item {
-      padding: 3vh;
-      width: 25vw;
-      margin-right: 20px;
-      margin-bottom: 20px;
-      background-color: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 5px 24px -5px rgba(34, 60, 80, 0.12);
-      .post__title {
-        font-family: 'Montserrat', sans-serif;
-        color: #3E3F58;
-        font-size: 3em;
-        font-weight: 400;
-        line-height: 44px;
-      }
-      .post__footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .post__author-wrapper {
-          display: flex;
-        }
-        img {
-          width: 24px;
-          height: 24px;
-          margin-right: 10px;
-        }
-        .post__share-btn {
-          background-color: inherit;
-          border: none;
-          color: #E32C75;
-          cursor: pointer;
-        }
-        .post__likes-btn {
-          display: flex;
-          align-items: center;
-          .like-btn {
-            color: #E32C75;
-          }
-          p {
-            margin: 0 1vh;
-          }
-        }
-      }
+  }
+  .post__item {
+    padding: 3vh;
+    width: 25vw;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 5px 24px -5px rgba(34, 60, 80, 0.12);
+  }
+  .post__title {
+    font-family: 'Montserrat', sans-serif;
+    color: #3E3F58;
+    font-size: 3em;
+    font-weight: 400;
+    line-height: 44px;
+  }
+  .post__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .post__author-wrapper {
+      display: flex;
+    }
+    img {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+  }
+  .post__share-btn {
+    background-color: inherit;
+    border: none;
+    color: #E32C75;
+    cursor: pointer;
+  }
+  .post__likes-btn {
+    display: flex;
+    align-items: center;
+    .like-btn {
+      color: #E32C75;
+    }
+    p {
+      margin: 0 1vh;
     }
   }
 }
