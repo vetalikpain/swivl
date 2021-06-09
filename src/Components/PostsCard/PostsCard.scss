@@ -35,19 +35,20 @@
     font-size: 3em;
     font-weight: 400;
     line-height: 44px;
+    margin-bottom: 30px;
   }
   .post__footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .post__author-wrapper {
-      display: flex;
-    }
     img {
       width: 24px;
       height: 24px;
       margin-right: 10px;
     }
+  }
+  .post__author-wrapper {
+    display: flex;
   }
   .post__share-btn {
     background-color: inherit;
@@ -58,12 +59,12 @@
   .post__likes-btn {
     display: flex;
     align-items: center;
-    .like-btn {
-      color: #E32C75;
-    }
     p {
       margin: 0 1vh;
     }
+  }
+  .like-btn {
+    color: #E32C75;
   }
 }
 @media screen and (max-width: $tablet-width-l) {
